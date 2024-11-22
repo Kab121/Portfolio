@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1ded56bb0e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header"> 
+     <div class="container">
+      <nav>
+        <img src="images/logo-remove.png" class="logo">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#achievements">Achievement</a></li>
+            <li><a href="#contacts">Contact</a></li>
+        </ul>
+      </nav> 
+      <div class="header-text">
+          <p>Computer Science at Brunel university</p>
+          <h1>Hi, I'm <span>Mustak Kabir</span></h1>  
+      </div> 
+     </div>   
+    </div> 
+
+    <!------------------------------------------About-------------------------------------->
+
+    <div id="about">
+        <div class="container">
+           <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi, I’m Mustak Kabir, a computer science student at Brunel University London with a passion for technology, design, and community impact.
+                    I have hands-on experience in programming, web design, and digital media, having worked as a Digital Learning Intern at Brunel and as an 
+                    Assistant Secretary for the Queens Park Bangladesh Association. Skilled in HTML, CSS, Photoshop, and 3D animation, I enjoy using technology 
+                    to solve problems and create meaningful projects. Outside of my studies, I’m an avid gamer, football and badminton player, and active member 
+                    of university societies.</p>
+              
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+                        <p class="tab-links" onclick="opentab('education', event)">Education</p>
+                    </div>
+                    
+                    
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-End Development</span><br>Front-End Languages: HTML, CSS, JavaScript<br>Front-End Frameworks & Libraries: React.js, Angular</li>
+                            <li><span>Back-End Development</span><br>Back-End Languages: JavaScript (Node.js), Python, Java, C#<br>Back-End Development Tools and Databases: MySQL, SPSS, MS Access<br>Version Control: Git, GitHub</li>
+                            <li><span>Web App Development</span><br>Designing Web App Interface (UI/UX)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Trading Assistant</span><br>Sainsbury’s</li>
+                            <li><span>Widening Access Student Ambassador</span><br>Brunel University</li>
+                            <li><span>Digital Learning Intern</span><br>Brunel University</li>
+                            <li><span>Assistant Manager</span><br>Wasabi</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Brunel University London</span><br>BSc (Hons) Computer Science</li>
+                            <li><span>City of Westminster College London</span><br>BTEC Level-3 National Diploma Information Technology</li>
+                            <li><span>City of Westminster College London</span><br>GCSE Mathematics and English</li>
+                        </ul>
+                    </div>
+            </div>
+           </div> 
+        </div>
+    </div>
+
+    <!-----------------------------------------Projects------------------------------------------------->
+    
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            
+            <div class="projects-list">
+                <!-- Hot Beans Website Project -->
+                <div class="project-card">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Hot Beans Website</h3>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">Responsive Design</span>
+                    </div>
+                    <p>I created the Hot Beans website using HTML and CSS, showcasing my skills in responsive design, structure, and creativity.</p>
+                    <a href="https://drive.google.com/file/d/10rj7ud21N8kFbq5yF4Xf0ZwpOwIqo_1-/view?usp=drive_link" target="_blank" class="project-link">View Project</a>
+                </div>
+
+                <!-- Swiftbot Project -->
+                <div class="project-card">
+                    <i class="fa-solid fa-robot"></i>
+                    <h3>Swiftbot Functionality Implementation</h3>
+                    <div class="project-tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">Robotics</span>
+                        <span class="tag">Project Management</span>
+                    </div>
+                    <p>Led a team to develop and implement code for a Swiftbot, enabling advanced functionalities such as autonomous navigation, obstacle detection, and interactive responses. Oversaw project milestones and managed workload distribution, ensuring effective team collaboration and timely completion.</p>
+                    <a href="https://drive.google.com/file/d/1xymigm67GubLctxr4929MBFTHd494X9h/view?usp=drive_link" target="_blank" class="project-link">View Project</a>
+                </div>
+
+                <!-- To-Do List Project -->
+                <div class="project-card">
+                    <i class="fa-brands fa-java"></i>
+                    <h3>To-Do List Web Application</h3>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Local Storage</span>
+                    </div>
+                    <p>Developed a To-Do List Web Application using HTML, CSS, and JavaScript, featuring task addition, deletion, and local storage functionality for persistent data management.</p>
+                    <a href="https://drive.google.com/file/d/10rj7ud21N8kFbq5yF4Xf0ZwpOwIqo_1-/view?usp=drive_link" target="_blank" class="project-link">View Project</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <div id="achievements" class="achievements-section">
+        <div class="container">
+            <h2>My Achievements</h2>
+            <p>Here are some of my certifications:</p>
+            <div class="certificate-gallery">
+                <div class="certificate">
+                    <img src="images/BSIP.png" alt="Certificate 1">
+                </div>
+                <div class="certificate">
+                    <img src="images/HTML.png" alt="Certificate 2">
+                </div>
+                <div class="certificate">
+                    <img src="images/CSS.png" alt="Certificate 3">
+                </div>
+                <div class="certificate">
+                    <img src="images/IBM.png.png" alt="Certificate 4">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!----------------------------------------Contact Section-------------------------------->
+<div id="contact">
+    <div class="container">
+        <h1 class="sub-title">Contact Me</h1>
+        <div class="contact-wrapper">
+            <!-- Left Side -->
+            <div class="contact-left">
+                <div class="contact-info">
+                    <p><i class="fa-solid fa-envelope"></i> kabirmustak@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 07419118651</p>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/mustak.kabir.9"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/mustak-kabir-41665917b/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/accounts/login/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://x.com/i/flow/single_sign_on"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <a href="https://drive.google.com/file/d/1i8RYjLM8r9VjqaC-I49epxtMshaersJ4/view?usp=sharing" class="btn">Download CV</a>
+            </div>
+            
+            <!-- Right Side -->
+            <div class="contact-right">
+                <form action="process_contact.php" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Copyright Section -->
+<footer class="copyright">
+    <div class="container">
+        <div class="copyright-content">
+            <div class="copyright-text">
+                <p>© 2024 Mustak Kabir. All rights reserved.</p>
+                <p>Last Updated: 22 November 2024</p>
+            </div>
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="#sitemap">Sitemap</a>
+            </div>
+            <div class="made-with">
+                <p>Made with <span class="heart">♥</span> Mustak Kabir</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Simple Policy Sections -->
+<div class="footer-policies">
+    <!-- Privacy -->
+    <section id="privacy" class="policy">
+        <h3>Privacy Policy</h3>
+        <p>This website collects personal information when you contact me through this form. Your data is kept secure and never shared with third parties. For any privacy concerns, please contact kabirmustak@gmail.com</p>
+        <a href="#" class="back-to-top">Back to Top</a>
+    </section>
+
+    <!-- Terms -->
+    <section id="terms" class="policy">
+        <h3>Terms of Service</h3>
+        <p>By using this website, you agree to respect all intellectual property rights. Content may not be reproduced without permission. All portfolio work showcased is subject to copyright protection.</p>
+        <a href="#" class="back-to-top">Back to Top</a>
+    </section>
+
+    <!-- Sitemap -->
+    <section id="sitemap" class="policy">
+        <h3>Sitemap</h3>
+        <div class="sitemap-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <a href="#" class="back-to-top">Back to Top</a>
+    </section>
+</div>
+<!--------------------------------------JS------------------------------------>
+<script src="script.js"></script>
+</body>
+</html>
