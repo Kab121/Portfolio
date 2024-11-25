@@ -17,3 +17,24 @@ function opentab(tabName, event) {
     // Show the corresponding tab content
     document.getElementById(tabName).classList.add("active-tab");
 }
+document.getElementById('contactForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData.entries());
+
+    const response = await fetch(e.target.action, {
+      method: 'POST',
+      body: JSON.stringify(data),
+      headers: { 'Content-Type': 'application/json' },
+    });
+
+    if (response.ok) {
+      alert('Form submitted successfully!');
+    } else {
+      alert('There was a problem submitting the form.');
+    }
+  });
+  function toggleMenu() {
+    const navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('show');
+}

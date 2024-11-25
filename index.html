@@ -15,7 +15,10 @@
      <div class="container">
       <nav>
         <img src="Images/logo-remove.png" class="logo">
-        <ul>
+        <button class="hamburger" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul id="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -178,12 +181,12 @@
             
             <!-- Right Side -->
             <div class="contact-right">
-                <form action="process_contact.php" method="POST">
+                <form id="contactForm" action="https://script.google.com/macros/s/AKfycbx4dOV22lC2Xc9U9XUpJulJKrl0reIoSKozUGx0xsvDBsGppGATExv6pbrHHtn74UwxRQ/exec" method="POST">
                     <input type="text" name="name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
                     <button type="submit">Submit</button>
-                </form>
+                </form>               
             </div>
         </div>
     </div>

@@ -475,6 +475,7 @@ button[type="submit"]:hover {
   }
 }
 
+
 /* Footer Styles */
 .copyright {
   background: #333;
@@ -588,6 +589,38 @@ button[type="submit"]:hover {
 
 .back-to-top:hover {
   background: #27ae60;
+}
+
+/* Hamburger Menu Button */
+.hamburger {
+  display: none; /* Hidden by default */
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Responsive Styles for Small Screens */
+@media (max-width: 768px) {
+  ul {
+      display: none; /* Initially hide the links */
+      flex-direction: column;
+      position: absolute;
+      top: 60px; /* Below the header */
+      right: 10px;
+      background-color: #fff;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  ul.show {
+      display: flex; /* Show the links when toggled */
+  }
+
+  .hamburger {
+      display: block; /* Show the hamburger button */
+  }
 }
 
 @keyframes heartBeat {
