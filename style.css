@@ -590,36 +590,79 @@ button[type="submit"]:hover {
 .back-to-top:hover {
   background: #27ae60;
 }
-
-/* Hamburger Menu Button */
-.hamburger {
-  display: none; /* Hidden by default */
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
+/* General Navigation Bar Styling */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+  position: relative;
+  z-index: 1000;
 }
 
-/* Responsive Styles for Small Screens */
+/* Logo */
+.logo {
+  width: 120px;
+}
+
+/* Hamburger Button Styling */
+.hamburger {
+  display: none; /* Hidden on larger screens */
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 1001; /* Ensure it stays above other elements */
+}
+
+/* Navigation Menu */
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1.5rem; /* Space between items */
+  align-items: center;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+  color: #00aaff; /* Hover effect for links */
+}
+
+/* Mobile-Responsive Menu */
 @media (max-width: 768px) {
-  ul {
-      display: none; /* Initially hide the links */
+  .hamburger {
+      display: block; /* Show hamburger button on small screens */
+  }
+
+  .menu {
+      display: none; /* Hide menu by default */
       flex-direction: column;
       position: absolute;
-      top: 60px; /* Below the header */
-      right: 10px;
-      background-color: #fff;
-      padding: 1rem;
-      border: 1px solid #ccc;
+      top: 100%; /* Place menu directly below the nav bar */
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      text-align: center;
+      padding: 1rem 0;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   }
 
-  ul.show {
-      display: flex; /* Show the links when toggled */
+  .menu.active {
+      display: flex; /* Show menu when active class is added */
   }
 
-  .hamburger {
-      display: block; /* Show the hamburger button */
+  .menu li {
+      margin: 10px 0; /* Add spacing between menu items */
   }
 }
 

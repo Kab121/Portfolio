@@ -1,4 +1,4 @@
-// Get all tab links and contents
+// Tab functionality for switching between Skills, Experience, and Education
 var tabLinks = document.getElementsByClassName("tab-links");
 var tabContents = document.getElementsByClassName("tab-contents");
 
@@ -17,24 +17,31 @@ function opentab(tabName, event) {
     // Show the corresponding tab content
     document.getElementById(tabName).classList.add("active-tab");
 }
+
+// Contact form submission with Google Apps Script
 document.getElementById('contactForm').addEventListener('submit', async (e) => {
     e.preventDefault();
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData.entries());
 
     const response = await fetch(e.target.action, {
-      method: 'POST',
-      body: JSON.stringify(data),
-      headers: { 'Content-Type': 'application/json' },
+        method: 'POST',
+        body: JSON.stringify(data),
+        headers: { 'Content-Type': 'application/json' },
     });
 
     if (response.ok) {
-      alert('Form submitted successfully!');
+        alert('Form submitted successfully!');
     } else {
-      alert('There was a problem submitting the form.');
+        alert('There was a problem submitting the form.');
     }
-  });
-  function toggleMenu() {
-    const navLinks = document.getElementById('nav-links');
-    navLinks.classList.toggle('show');
-}
+});
+
+//hamburger----------------------------
+document.querySelector('.hamburger').addEventListener('click', () => {
+  const menu = document.querySelector('.menu');
+  menu.classList.toggle('active');
+});
+
+
+
