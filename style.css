@@ -638,6 +638,11 @@ nav {
   color: #00aaff; /* Hover effect for links */
 }
 
+#msg{
+  color: #101110;
+  margin-top: -40px;
+  display: contents;
+}
 /* Mobile-Responsive Menu */
 @media (max-width: 768px) {
   .hamburger {
